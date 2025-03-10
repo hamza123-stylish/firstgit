@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+        h1{
+            color: white;
+            
+        }
+
+        .registration-form {
+            background-color:pink;
+            width: 300px;
+            padding: 20px;
+            margin: 50px;
+            border: 2px solid black;
+        }
+
+        .registration-form-data label {
+            color: blue;
+            display: block;
+            margin-top: 3px;
+            margin-bottom: 7px;
+            font-weight: bold;
+            
+        }
+
+        .registration-form-data input {
+            margin-bottom: 5px;
+            width: 85%;
+            padding: 05px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+
+        }
+
+
+
+        .button{
+text-align: center;
+
+
+        }
+button{
+    background-color: white;
+    width: 85%;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    padding: 10px 20px;
+    margin: 5px;
+    margin-top: 10px;
+    border: 1px solid pink;
+    border-radius: 5px ;
+}
+    </style>
+</head>
+
+<body>
+    <div class="registration-form">
+        <h1>Registration Form</h1>
+
+        <div class="registration-form-data">
+            <form action="/submit.php">
+
+                <!--Name-->
+                <div class="name">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!--Username-->
+                <div class="username">
+                    <label for="usernamer">Username:</label>
+                    <input type="text" id="username" placeholder="Enter your username" required>
+                </div>
+
+                <!--email-->
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <!--Password-->
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <!--Password Confirmation-->
+                <div class="confirm-password">
+                    <label for="password-confirm">Confirm Password</label>
+                    <input type="password" id="password-confirm" placeholder="Confirm your password" required>
+                </div>
+
+                <!--button-->
+                <div class="button">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
